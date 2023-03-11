@@ -66,6 +66,7 @@ h1 {
 
 .icons {
     position: relative;
+    align-self: baseline;
 }
 
 .open {
@@ -99,4 +100,14 @@ h1 {
 .acc-item:hover .open {
     opacity: 0;
     top: -100%;
+}
+
+@media screen and (max-width: 820px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
 }
