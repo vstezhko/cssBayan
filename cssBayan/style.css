@@ -60,9 +60,15 @@ h1 {
 }
 
 .acc-item .acc-item-body img {
+    position: absolute;
     height: inherit;
     max-height: 400px;
     max-width: 100%;
+    transition: all ease-in 0.3s;
+}
+
+.acc-item .acc-item-body img:hover {
+    transform: scale(105%, 105%);
 }
 
 .icons {
