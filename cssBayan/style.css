@@ -45,14 +45,12 @@ h1 {
     padding: 0.5em;
     transition: all ease-in 0.3s;
     opacity: 0;
-    /*top: -100%;*/
     height: 0;
     z-index: -1;
 }
 
 .acc-item:hover .acc-item-body,
 .acc-item:target .acc-item-body{
-    /*top: 0;*/
     opacity: 1;
     height: 30vh;
     z-index: 0;
