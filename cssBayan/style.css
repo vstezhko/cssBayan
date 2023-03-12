@@ -33,11 +33,11 @@ h1 {
 
 span {
     font-size: 1.2em;
-    margin-top: 1em;
 }
 
 .acc-item {
     border-bottom: 0.05em solid black;
+    padding-top: 0.5em;
 }
 
 .acc-item .acc-item-title {
@@ -65,7 +65,6 @@ label {
 }
 
 
-.acc-item:hover .acc-item-body,
 input:checked ~ label .acc-item-body{
     opacity: 1;
     height: 30vh;
@@ -78,9 +77,7 @@ input:checked ~ label .acc-item-body{
     transition: all ease-in 0.3s;
 }
 
-.acc-item .acc-item-body img:hover {
-    transform: scale(105%, 105%);
-}
+
 
 .icons {
     position: relative;
@@ -93,13 +90,29 @@ input:checked ~ label .acc-item-body{
     transform: rotate(45deg);
 }
 
-.page:hover .close {
-    opacity: 1;
+
+
+input:checked ~ label .close {
+    transform: rotate(90deg);
 }
 
-input:checked ~ label .close,
-.acc-item:hover .close {
-    transform: rotate(90deg);
+@media screen and (min-width: 821px) {
+    .acc-item:hover .acc-item-body {
+        opacity: 1;
+        height: 30vh;
+    }
+
+    .acc-item .acc-item-body img:hover {
+        transform: scale(105%, 105%);
+    }
+
+    .page:hover .close {
+        opacity: 1;
+    }
+
+    .acc-item:hover .close {
+        transform: rotate(90deg);
+    }
 }
 
 @media screen and (max-width: 820px) {
@@ -109,6 +122,10 @@ input:checked ~ label .close,
 
     span {
         font-size: 1.5em;
+    }
+
+    .page .close {
+        opacity: 1;
     }
 }
 
