@@ -98,6 +98,10 @@ input:checked ~ label span:first-of-type {
     font-weight: 600;
 }
 
+label:active {
+    color: gray;
+}
+
 @media (hover: hover) {
     .acc-item:hover .acc-item-body {
         opacity: 1;
