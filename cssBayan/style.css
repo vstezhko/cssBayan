@@ -94,7 +94,11 @@ input:checked ~ label .close {
     transform: rotate(90deg);
 }
 
-@media screen and (min-width: 821px) {
+input:checked ~ label span:first-of-type {
+    font-weight: 600;
+}
+
+@media (hover: hover) {
     .acc-item:hover .acc-item-body {
         opacity: 1;
         height: 30vh;
