@@ -103,6 +103,10 @@ label:active {
 }
 
 @media (hover: hover) {
+    label {
+        cursor: none;
+    }
+
     .acc-item:hover .acc-item-body {
         opacity: 1;
         height: 30vh;
@@ -140,7 +144,7 @@ label:active {
         width: 85%;
     }
 
-    .acc-item:hover .acc-item-body, .acc-item:target .acc-item-body {
+    .acc-item-body, .acc-item:target .acc-item-body {
         height: 25vh;
     }
 
