@@ -59,7 +59,6 @@ label {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    cursor: pointer;
 }
 
 
@@ -104,7 +103,7 @@ label:active {
 
 @media (hover: hover) {
     label {
-        cursor: none;
+        cursor: pointer;
     }
 
     .acc-item:hover .acc-item-body {
